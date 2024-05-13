@@ -1,0 +1,10 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'dudozer_maks'
+theme = 'customTheme'
+
+# somehow when I add this exact lines to theme's hugo.toml it does not work
+[markup]
+  [markup.highlight]
+		lineNos = true
+    style = 'gruvbox'
