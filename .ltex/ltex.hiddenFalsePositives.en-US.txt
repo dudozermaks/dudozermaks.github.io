@@ -1,0 +1,1 @@
+{"rule":"EN_A_VS_AN","sentence":"^\\QLet's say that we have a button with an \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q icon on this page, and we want to tap on it.\\E$"}

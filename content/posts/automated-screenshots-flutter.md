@@ -29,7 +29,7 @@ found out that I have no screenshots for my app. I had two options to make
 them:
 
 1. By hand
-2. Automate that task
+2. Using some kind of script
 
 My app grows quickly and interface changes fast, which means that screenshotting by hand is
 dumb idea. So I started looking into how I can implement automated screenshots.
@@ -56,7 +56,7 @@ guide.
 ### Step 1. Adding dependencies
 
 Go to your project and open `pubspec.yaml`. Find a line that says
-`dev_dependencies`. Add this lines underneath it:
+`dev_dependencies`. Add this lines somewhere at the bottom:
 ```yaml
 dev_dependencies:
   flutter_test:
@@ -89,7 +89,7 @@ void main() {
 
 ### Step 3. Write tests
 
-At this step, our actions might be different, depending on your app. But I will
+At this step, our actions might be different, depending on the structure of your app. But I will
 show you, how to do screenshots with standard app, which `flutter create
 somename` produces.
 
@@ -148,7 +148,7 @@ it! Screenshot of default page located at
 
 "But that's boring", you might say, "What if I need to click on some buttons or do something else
 before screenshot is taken?" I got you, that is easy too! Let's say that we have
-a button with `add` icon on this page, and we want to tap on it. Just add
+a button with an `add` icon on this page, and we want to tap on it. Just add
 another `makeScreenshot` call below the first one and modify it a bit.
 
 ```dart
@@ -180,7 +180,7 @@ screenshot](https://raw.githubusercontent.com/dudozermaks/flutter_automated_scre
 
 <a href="https://www.buymeacoffee.com/dudozer_maks"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=dudozer_maks&button_colour=d46f11&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" /></a>
 
-That's it for now! Again, you can find everything I did here in this GitHub repo
+That's it for now! Again, you can find everything I did here in this GitHub
 [repo](https://github.com/dudozermaks/flutter_automated_screenshots_showcase). Also, here is an
 [example](https://github.com/dudozermaks/sudoku/blob/8a6713e614dd1e51ef4b12a5d6440cae54ce2c01/integration_test/screenshots_test.dart) of how I do it in my
 project.
