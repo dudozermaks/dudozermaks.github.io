@@ -30,6 +30,7 @@ header h1 {
 
 #quotation_mark {
 	color: var(--b-purple);
+	margin-right: 0.2em;
 }
 
 header nav ul {
