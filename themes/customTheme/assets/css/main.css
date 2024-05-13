@@ -55,9 +55,14 @@ a {
 
 #centering {
   max-width: 75ch;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .highlight {
-	border: 1px solid var(--b-yellow);
+	overflow: auto;
+}
+
+img {
+  height: 100%;
+  max-width: 100%;
 }
