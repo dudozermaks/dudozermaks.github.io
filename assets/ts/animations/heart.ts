@@ -60,7 +60,7 @@ function draw_rect(context: CanvasRenderingContext2D, pos: Vec, width: number, h
 const canvas = document.getElementById("heart") as HTMLCanvasElement;
 canvas.addEventListener('click', function() {
 	effect_num += 1;
-	effect_num = effect_num % 3;
+	effect_num = effect_num % 4;
 	effect_counter = 0;
 }, false);
 const context = canvas.getContext('2d') as CanvasRenderingContext2D;
@@ -92,12 +92,11 @@ function loop(time: number) {
 				for (var x = 0; x < n; x++) {
 					for (var y = 0; y < n; y++) {
 						if (matrix[x][y] != bg_color) {
-							matrix[x][y] = colors[effect_counter];
+							matrix[x][y] = colors[effect_counter % colors.length];
 						}
 					}
 				}
-				effect_counter += 1;
-				effect_counter = effect_counter % colors.length;
+
 				break;
 			}
 			case 1: {
@@ -109,7 +108,6 @@ function loop(time: number) {
 					}
 				}
 
-				effect_counter += 1;
 				break;
 			}
 			case 2: {
@@ -121,11 +119,22 @@ function loop(time: number) {
 					}
 				}
 
-				effect_counter += 1;
+				break;
+			}
+			case 3: {
+				for (var x = 0; x < n; x++) {
+					for (var y = 0; y < n; y++) {
+						if (matrix[x][y] != bg_color) {
+							matrix[x][y] = colors[(Math.random() * (colors.length - 1)).toFixed(0)];
+						}
+					}
+				}
+
 				break;
 			}
 		}
 
+		effect_counter += 1;
 		lastTime = time;
 	}
 
