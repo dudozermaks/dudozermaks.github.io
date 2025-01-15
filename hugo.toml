@@ -3,8 +3,14 @@ languageCode = 'en-us'
 title = 'dudozer_maks'
 theme = 'customTheme'
 
-# somehow when I add this exact lines to theme's hugo.toml it does not work
 [markup]
+	[markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
   [markup.highlight]
 		lineNos = true
     style = 'gruvbox'
+
+[output]
+animations = ['html']

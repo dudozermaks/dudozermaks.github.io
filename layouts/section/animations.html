@@ -1,0 +1,11 @@
+{{ define "main" }}
+	<div>
+		<!-- {{ $billiard := resources.Get "ts/animations/billiard.ts" | js.Build }} -->
+		<!-- <script src="{{ $billiard.Permalink }}" defer></script> -->
+		<!-- <canvas id="billiard" width="80" height="160" style="width: 400px; height: 800px; image-rendering: pixelated"></canvas> -->
+
+		{{ $heart := resources.Get "ts/animations/heart.ts" | js.Build }}
+		<script src="{{ $heart.Permalink }}" defer></script>
+		<canvas id="heart" width="400" height="400" style="image-rendering: pixelated"></canvas>
+	</div>
+{{ end }}

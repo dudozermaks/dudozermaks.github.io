@@ -10,7 +10,7 @@ I love computers, bicycles and music.
 
 Some of my skills:
 - I develop apps with **Dart** and **Flutter**. My Sudoku app for Android that uses Flutter: https://github.com/dudozermaks/sudoku
-- I do competitive programming in **Rust**
+- I do competitive programming in Rust
 - I know **Linux** well. I have been using Linux (mainly Arch) on my PC for 2–3 years
 - I can build simple websites using **Hugo**
 - I love embedded programming, especially with **Raspberry Pi Pico** and **ESP32**

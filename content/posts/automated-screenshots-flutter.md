@@ -12,15 +12,6 @@ different. It's a little bit disappointing.
 
 <!--more-->
 
-<!--toc:start-->
-- [Pre-made libraries and other ways](#pre-made-libraries-and-other-ways)
-- [My solution](#my-solution)
-  - [Step 1. Adding dependencies](#step-1-adding-dependencies)
-  - [Step 2. Create test file](#step-2-create-test-file)
-  - [Step 3. Write tests](#step-3-write-tests)
-- [Ending](#ending)
-<!--toc:end-->
-
 ## Pre-made libraries and other ways
 
 I'm building my app with Flutter called
@@ -178,7 +169,7 @@ screenshot](https://raw.githubusercontent.com/dudozermaks/flutter_automated_scre
 
 ## Ending
 
-<a href="https://www.buymeacoffee.com/dudozer_maks"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=dudozer_maks&button_colour=d46f11&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" /></a>
+{{< coffee >}}
 
 That's it for now! Again, you can find everything I did here in this GitHub
 [repo](https://github.com/dudozermaks/flutter_automated_screenshots_showcase). Also, here is an
